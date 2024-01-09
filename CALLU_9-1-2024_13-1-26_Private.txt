@@ -1,0 +1,5 @@
+| Área de Análisis | Porcentaje Correcto | Qué debe mejorar |
+|---|---|---|
+| Vinculación | 60% | Debería haber mencionado explícitamente que el cliente hizo contacto a través de la página web de la empresa. |
+| Preguntas | 100% | --- |
+| Generación de acuerdos | 100% | --- |

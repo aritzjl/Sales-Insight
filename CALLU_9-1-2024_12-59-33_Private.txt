@@ -1,0 +1,5 @@
+| Área de análisis        | Porcentaje de Acierto | Áreas de Mejora                        |
+|-------------------------|----------------------|-----------------------------------------|
+| Vinculación             | 50%                  | Se indica el medio de contacto, pero no se menciona el motivo específico de la llamada, es decir, lo que el cliente buscaba en el portal inmobiliario.                                           |
+| Preguntas               | 71%                  | Se realizaron las siguientes preguntas: a. '¿Qué te pareció lo que habías visto en el portal inmobiliario? ¿Está dentro de lo que tú estás buscando? b. '¿Estás buscando casa o departamento?' c. '¿En qué comuna estás buscando?' d. '¿Qué presupuesto tienes pensado invertir en tu compra?' e. '¿Qué fecha de entrega te acomodaría?'.  No se realizaron las siguientes preguntas: f. '¿Qué ahorro tienes al día de hoy?' g. '¿Qué sueldo tienes?' h. '¿Estás buscando para vivir o invertir?' |
+| Generación de acuerdos  | 0%                   | No se generó ningún acuerdo.                   |

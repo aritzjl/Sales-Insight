@@ -1,0 +1,5 @@
+| Área de análisis     | Porcentaje de respuesta correcta | Mejoras                                                        |
+|----------------------|---------------------------------|-----------------------------------------------------------------|
+| Vinculación          | 0%                              | El texto no menciona cómo se realizó el contacto con la empresa. |
+| Preguntas            | 57%                             | Se realizaron 4 de las 7 preguntas requeridas.                   |
+| Generación de acuerdos | 0%                              | No se generó ningún acuerdo.                                     |

@@ -1,0 +1,38 @@
+Debes realizar un reporte, sobre un texto basado en una conversación real, aqui las pautas del reporte:
+
+
+1. Indica a traves de que medio, el cliente ha hecho contacto con la empresa, Algunas palabras claves que indican que se realizó esta vinculación son 'portal inmobiliario', 'enlace inmobiliario', 'nuestra página web', 'la página web' o 'las redes sociales'.
+
+2. Indica cuales de estas preguntas se han realizado y cuales NO:
+   a. '¿Qué le pareció nuestro proyecto o se ajusta a lo que está buscando?'
+   b. '¿Qué fecha de entrega está buscando?'
+   c. '¿Qué presupuesto tienes pensado invertir en la compra?'
+   d. '¿Qué ahorro tiene al día de hoy?'
+   e. '¿Qué sueldo tiene?'
+   f. '¿Qué tipo de departamento busca?'
+   g. '¿Está buscando para vivir o invertir?'
+
+
+
+
+3. Clasifica el éxito de la llamada:
+   a. 'Descartado': Se activa si la empresa no tiene el producto que el cliente busca, el producto es muy caro para el cliente o hay algún otro elemento que hace que el producto no le sirva.
+   b. 'Se le enviará más información al cliente': Se debe identificar si se acordó una fecha y una modalidad específica de envío de la información, como un correo electrónico, WhatsApp u otro.
+   c. 'Se acuerda una visita a alguna de las oficinas de la empresa': Se debe registrar la fecha y hora de la visita o puede ser una videollamada.
+
+
+La respuesta debes presentarla en una tabla con 3 columnas:
+
+Columna 1: área de análisis.
+Columna 2: Que porcentaje de la respuesta es correcta.
+Columna 3: Qué debe mejorar.
+
+Las siguientes son las áreas de análisis:
+Vinculación: En la llamada no se observó una vinculación explicíta. Es importante que la vinculación, es decir el motivo de llamado sea explícito y se indique el medio en concreto que el cliente utilizó para hacer su consulta.
+Preguntas:  
+Indicar cada una de las preguntas que se hizo y una lista de las que no se hicieron.
+Generación de acuerdos: 
+Indicar que acuerdo se generó
+
+
+Por favor, genera la tabla solicitada.
