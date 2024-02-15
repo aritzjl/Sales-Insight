@@ -11,6 +11,28 @@ La herramienta está diseñada para facilitar el entrenamiento de vendedores tel
 3. **Generación de Reportes:** La herramienta utiliza otra IA para analizar la transcripción de la llamada junto con el guion que el vendedor debía seguir. Con esta información, se genera un reporte que compara la llamada con el guion, identificando áreas de mejora y destacando el desempeño del vendedor.
 4. **Envío de Guiones por Email:** Finalmente, la herramienta envía el guion generado por correo electrónico al vendedor, proporcionando retroalimentación inmediata y facilitando su proceso de aprendizaje y mejora continua.
 
+
+
+## **Configuración del Entorno Python**
+
+Para configurar el entorno de Python y poder ejecutar la herramienta, siga estos pasos:
+
+1. Cree un entorno virtual utilizando el siguiente comando:
+
+```bash
+bashCopy code
+python3 -m venv venv
+
+```
+
+1. Instale las dependencias necesarias utilizando el archivo **`requirements.txt`**:
+
+```bash
+bashCopy code
+pip install -r requirements.txt
+
+```
+
 ## **Configuración de la Base de Datos**
 
 Para configurar la conexión a la base de datos, siga estos pasos:
@@ -34,27 +56,13 @@ def conectar():
 
 ```
 
+3. Cree una base de datos llamada GPTSales en su instancia MariaDB
+
+4. Ejecute el archivo crear_bbdd.py para que se creen las tablas necesarias
+
+5. Agregue los teléfonos necesarios a la tabla correspondiente (de forma manual desde su cliente SQL)
+
 1. Guarde los cambios realizados en el archivo.
-
-## **Configuración del Entorno Python**
-
-Para configurar el entorno de Python y poder ejecutar la herramienta, siga estos pasos:
-
-1. Cree un entorno virtual utilizando el siguiente comando:
-
-```bash
-bashCopy code
-python3 -m venv venv
-
-```
-
-1. Instale las dependencias necesarias utilizando el archivo **`requirements.txt`**:
-
-```bash
-bashCopy code
-pip install -r requirements.txt
-
-```
 
 ## **Configuración de Credenciales y Ajustes**
 
