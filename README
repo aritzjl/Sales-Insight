@@ -1,0 +1,45 @@
+# **Configuración de la Herramienta**
+
+Bienvenido a la guía de configuración de la herramienta. Siga detenidamente los pasos a continuación para configurar correctamente el entorno y las credenciales necesarias para el funcionamiento adecuado de la herramienta.
+
+## **Configuración del Entorno Python**
+
+Para configurar el entorno de Python y poder ejecutar la herramienta, siga estos pasos:
+
+1. Cree un entorno virtual utilizando el siguiente comando:
+
+```bash
+bashCopy code
+python3 -m venv venv
+
+```
+
+1. Instale las dependencias necesarias utilizando el archivo **`requirements.txt`**:
+
+```bash
+bashCopy code
+pip install -r requirements.txt
+
+```
+
+## **Configuración de Credenciales y Ajustes**
+
+Siga los siguientes pasos para configurar las credenciales y ajustes de la herramienta:
+
+1. Descargue las credenciales de Google Cloud en formato JSON desde su cuenta de Google Cloud Platform. Guarde el archivo descargado junto a este archivo README con el nombre "credentials.json".
+2. Edite los datos del archivo **`config.txt`** con la siguiente información:
+    - **`OPENAI`**: La API key de OpenAI.
+    - **`FOLDER_ID`**: La ID de la carpeta de Google Drive donde se subirán los archivos.
+    - **`EMAIL_SENDER`**: La dirección de correo electrónico desde la cual se enviarán los reportes a los vendedores.
+    - **`EMAIL_PASS`**: La contraseña para aplicaciones del correo electrónico desde el cual se enviarán los reportes a los vendedores.
+3. Si es necesario, puede editar el prompt utilizado para solicitar el reporte a ChatGPT, editando el archivo **`prompt.txt`**.
+
+## **Anexo: Obtención de Contraseña para Aplicaciones de Email y Configuración del Email para Envíos Automáticos**
+
+Para obtener la contraseña para aplicaciones del correo electrónico y configurar el email para envíos automáticos, se recomienda seguir el tutorial disponible en el siguiente enlace:
+
+[Tutorial: Enviar Correo Electrónico vía Gmail y SMTP](https://recursospython.com/guias-y-manuales/enviar-correo-electronico-via-gmail-y-smtp/)
+
+---
+
+**Nota:** Asegúrese de seguir estos pasos cuidadosamente para garantizar el correcto funcionamiento de la herramienta. Si necesita ayuda adicional, no dude en ponerse en contacto con el equipo de soporte.

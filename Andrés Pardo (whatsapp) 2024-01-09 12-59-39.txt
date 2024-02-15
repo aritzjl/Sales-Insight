@@ -1,5 +1,0 @@
-Área de análisis | Porcentaje de respuesta correcta | Qué debe mejorar
-------------------|--------------------------------|-----------------
-Vinculación | 0% | No se realiza una vinculación explícita, ni se indica el medio a través del cual el cliente se puso en contacto con la empresa.
-Preguntas | 25% | Solo se realiza una pregunta, que es sobre el tipo de departamento que busca. No se realizan las demás preguntas mencionadas.
-Generación de acuerdos | 0% | No se genera ningún acuerdo en la llamada.

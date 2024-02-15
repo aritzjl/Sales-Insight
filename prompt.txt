@@ -1,4 +1,4 @@
-Debes realizar un reporte, sobre un texto basado en una conversación real, aqui las pautas del reporte:
+Debes realizar un reporte, sobre un texto basado en una conversación real, aqui las pautas del reporte (ten en cuenta, que solo se guarda la voz del vendedor):
 
 
 1. Indica a traves de que medio, el cliente ha hecho contacto con la empresa, Algunas palabras claves que indican que se realizó esta vinculación son 'portal inmobiliario', 'enlace inmobiliario', 'nuestra página web', 'la página web' o 'las redes sociales'.
