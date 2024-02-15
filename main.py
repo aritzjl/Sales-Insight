@@ -10,6 +10,7 @@ from email.message import EmailMessage
 import ssl
 import smtplib
 import time
+from connect import conectar
 
 
 def cargar_configuracion(archivo):
@@ -53,7 +54,7 @@ def enviar_reporte_via_mail(reporte,email):
 
 def obtener_email_por_telefono(numero_telefono):
     # Conectar a la base de datos
-    conn = sqlite3.connect('insights.db')
+    conn = conectar()
     c = conn.cursor()
 
     # Buscar el email asociado al número de teléfono en la tabla 'telefono'
@@ -71,11 +72,12 @@ def obtener_email_por_telefono(numero_telefono):
 
 def obtener_id_telefono(numero_telefono):
     # Conectar a la base de datos
-    conn = sqlite3.connect('insights.db')
+    conn = conectar()
     c = conn.cursor()
 
     # Buscar el ID del número de teléfono en la tabla 'telefono'
-    c.execute("SELECT id FROM telefono WHERE numero_telefono_nombre_carpeta = ?", (numero_telefono,))
+    c.execute("SELECT id FROM telefono WHERE numero_telefono_nombre_carpeta = %s", (numero_telefono,))
+
     resultado = c.fetchone()
 
     # Cerrar la conexión y retornar el ID del teléfono si se encuentra, None en caso contrario
@@ -88,14 +90,15 @@ def obtener_id_telefono(numero_telefono):
 
 def guardar_llamada(llamada_info):
     # Conectar a la base de datos
-    conn = sqlite3.connect('insights.db')
+    conn = conectar()
     c = conn.cursor()
 
     # Obtener la fecha y hora actual
     fecha_hora_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     # Insertar los datos de la llamada en la tabla 'llamada'
-    c.execute("INSERT INTO llamada (telefono_id, transcripcion, fecha_hora, nombre_archivo, reporte, enlace_archivo) VALUES (?, ?, ?, ?, ?, ?)", llamada_info)
+    c.execute("INSERT INTO llamada (telefono_id, transcripcion, fecha_hora, nombre_archivo, reporte, enlace_archivo) VALUES (%s, %s, %s, %s, %s, %s)", llamada_info)
+
     
     # Guardar los cambios y cerrar la conexión
     conn.commit()
@@ -105,7 +108,7 @@ def guardar_llamada(llamada_info):
 def revisar_archivos():
     client=OpenAI(api_key=OPENAI)
     # Conexión a la base de datos (creará el archivo si no existe)
-    conn = sqlite3.connect('insights.db')
+    conn = conectar()
     cursor = conn.cursor()
 
     # Credenciales y configuración de la API de Google Drive
@@ -146,7 +149,8 @@ def revisar_archivos():
                     file_url = file_info['webViewLink']
 
                     # Verificar si el nombre del archivo no está en la tabla de llamadas de la base de datos
-                    query = cursor.execute("SELECT enlace_archivo FROM llamada WHERE enlace_archivo=?", (file_url,))
+                    query = cursor.execute("SELECT enlace_archivo FROM llamada WHERE enlace_archivo=%s", (file_url,))
+
                     if not query.fetchone():
                         file_path = os.path.join(download_dir, file_name)
                         
