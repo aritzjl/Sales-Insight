@@ -19,7 +19,6 @@ Para configurar la conexión a la base de datos, siga estos pasos:
 2. Edite los datos de conexión con su base de datos MariaDB:
 
 ```python
-pythonCopy code
 import mariadb
 
 def conectar():
@@ -34,7 +33,8 @@ def conectar():
 
 ```
 
-1. Guarde los cambios realizados en el archivo.
+3. Guarde los cambios realizados en el archivo.
+4. Ejecute `createddbb.py`para que se creen las tablas necesarias en la base de datos.
 
 ## **Configuración del Entorno Python**
 
@@ -43,7 +43,6 @@ Para configurar el entorno de Python y poder ejecutar la herramienta, siga estos
 1. Cree un entorno virtual utilizando el siguiente comando:
 
 ```bash
-bashCopy code
 python3 -m venv venv
 
 ```
@@ -51,7 +50,6 @@ python3 -m venv venv
 1. Instale las dependencias necesarias utilizando el archivo **`requirements.txt`**:
 
 ```bash
-bashCopy code
 pip install -r requirements.txt
 
 ```
@@ -77,3 +75,5 @@ Para obtener la contraseña para aplicaciones del correo electrónico y configur
 ---
 
 **Nota:** Asegúrese de seguir estos pasos cuidadosamente para garantizar el correcto funcionamiento de la herramienta. Si necesita ayuda adicional, no dude en ponerse en contacto con el equipo de soporte.
+
+   
