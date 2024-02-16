@@ -11,9 +11,6 @@ except mariadb.Error as e:
 # Obtener el cursor
 cur = conn.cursor()
 
-# Seleccionar la base de datos recién creada
-cur.execute("USE GPTSales")
-
 # Crear la tabla 'empresa' si no existe
 cur.execute('''CREATE TABLE IF NOT EXISTS empresa (
                 id INT AUTO_INCREMENT PRIMARY KEY,
